@@ -1,0 +1,55 @@
+@import url(../../Common.css);
+
+header {
+   width: 100vw;
+   background-color: var(--color-white);
+   height: 6vh;
+   top: 0;
+   position: sticky;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0px;
+}
+
+nav {
+   display: flex;
+   width: 95vw;
+   top: 0;
+   background-color: var();
+   position: sticky;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   gap: 2vw;
+   display: flex;
+   padding: 0;
+}
+
+nav ul li {
+   display: flex;
+   align-items: center;
+}
+
+nav ul li a {
+   font-size: var(--body-regular-22-size);
+   color: var(--color-neutral-600, #9e9e9e);
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   font-size: var(--body-regular-24-size);
+   font-weight: var(--font-weight-medium);
+   color: var(--color-neutral-900, #424242);
+   line-height: 140%;
+   transition: 500ms;
+   letter-spacing: 0.2px;
+   -webkit-transition: 500ms;
+   -moz-transition: 500ms;
+   -ms-transition: 500ms;
+   -o-transition: 500ms;
+}
