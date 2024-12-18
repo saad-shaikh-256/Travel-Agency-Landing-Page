@@ -6,6 +6,11 @@
    --white-color: #ffffff;
    --black-color: #212121;
 
+   ::selection {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+   }
+
 }
 
 * {
@@ -29,8 +34,8 @@ body {
 }
 
 nav {
-   width: 95%;
-   padding: 40px 0;
+   width: 90%;
+   height: 15%;
    margin: auto;
    display: flex;
    justify-content: space-between;
@@ -83,9 +88,9 @@ nav {
 }
 
 main {
-   width: 95%;
+   width: 90%;
+   height: 75%;
    margin: auto;
-   height: fit-content;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -94,14 +99,15 @@ main {
 
 #leftContainer {
    width: 50%;
+   height: 100%;
    display: flex;
    flex-direction: column;
    align-items: start;
-   justify-content: start;
+   justify-content: center;
    gap: 64px;
 
    #textContainer {
-      width: 70%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -118,23 +124,20 @@ main {
          color: #616161;
          font-size: 16px;
          font-weight: 500;
-         line-height: 140%;
-         letter-spacing: 0.2px;
       }
 
       #heading {
+         width: 60%;
          color: #424242;
          font-size: 48px;
          font-weight: 700;
-         line-height: 58px;
       }
 
       #subheading {
+         width: 55%;
          color: #757575;
          font-size: 18px;
          font-weight: 500;
-         line-height: 140%;
-         letter-spacing: 0.2px;
       }
    }
 
@@ -165,13 +168,111 @@ main {
 
 #rightContainer {
    width: 50%;
-   height: fit-content;
-   overflow: hidden;
-   background-size: contain;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 
    img {
-      scale: 85%;
-   background-size: contain;
+      scale: 100%;
+      background-size: contain;
+
+      &:hover {
+         scale: 105%;
+      }
    }
 
 }
+
+@media only screen and (max-width: 480px) {
+   nav {
+      width: 92%;
+      height: 12%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #logo {
+         scale: 80%;
+      }
+
+      #links,
+      #contact {
+         display: none;
+      }
+
+      #menu {
+         display: block;
+      }
+   }
+
+   main {
+      width: 92%;
+      height: 75%;
+      justify-content: space-between;
+      flex-direction: column;
+   }
+
+   #leftContainer {
+      order: 2;
+      width: 100%;
+      height: 45%;
+      gap: 50px;
+
+      #textContainer {
+         width: 100%;
+         gap: 20px;
+
+         #upperText {
+            font-size: 14px;
+         }
+
+         #heading {
+            width: 80%;
+            font-size: 28px;
+         }
+
+         #subheading {
+            width: 90%;
+            font-size: 14px;
+         }
+      }
+
+      #button {
+         font-size: 12px;
+         border-radius: 8px;
+         padding: 8px 20px;
+      }
+   }
+
+   #rightContainer {
+      order: 1;
+      width: 92%;
+      height: 45%;
+
+      img {
+         width: 100%;
+         height: auto;
+         background-size: contain;
+
+         &:hover {
+            scale: 58%;
+         }
+      }
+
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {}
+
+@media (min-width: 601px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+@media (min-width: 993px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) and (max-width: 1600px) {}
+
+@media (min-width: 1601px) {}
