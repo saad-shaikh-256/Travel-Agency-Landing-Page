@@ -131,6 +131,7 @@ main {
          color: #424242;
          font-size: 48px;
          font-weight: 700;
+         line-height: 120%;
       }
 
       #subheading {
@@ -138,6 +139,8 @@ main {
          color: #757575;
          font-size: 18px;
          font-weight: 500;
+         line-height: 140%;
+         letter-spacing: 0.2px;
       }
    }
 
@@ -426,10 +429,291 @@ main {
    }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {}
+@media (min-width: 769px) and (max-width: 992px) {
+   nav {
+      width: 90%;
 
-@media (min-width: 993px) and (max-width: 1200px) {}
+      #contact {
+         padding: 8px 22px;
+      }
 
-@media (min-width: 1201px) and (max-width: 1600px) {}
+      #menu {
+         display: none;
+      }
+   }
 
-@media (min-width: 1601px) {}
+   main {
+      width: 90%;
+      height: 75%;
+      justify-content: space-between;
+      overflow: hidden;
+   }
+
+   #leftContainer {
+      width: 50%;
+      height: 100%;
+      gap: 56px;
+
+      #textContainer {
+         width: 100%;
+         gap: 24px;
+
+         #upperText {
+            width: 100%;
+            font-size: 14px;
+         }
+
+         #heading {
+            width: 90%;
+            font-size: 32px;
+         }
+
+         #subheading {
+            width: 75%;
+            font-size: 14px;
+         }
+      }
+
+      #button {
+         padding: 8px 20px;
+      }
+   }
+
+   #rightContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         width: 100%;
+         height: auto;
+         background-size: contain;
+
+         &:hover {
+            scale: 105%;
+         }
+      }
+
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   nav {
+      width: 90%;
+
+      #contact {
+         padding: 10px 24px;
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+
+   main {
+      width: 90%;
+      height: 75%;
+      justify-content: space-between;
+      overflow: hidden;
+   }
+
+   #leftContainer {
+      width: 50%;
+      height: 100%;
+      gap: 60px;
+
+      #textContainer {
+         width: 100%;
+         gap: 24px;
+
+         #upperText {
+            width: 100%;
+            font-size: 14px;
+         }
+
+         #heading {
+            width: 80%;
+            font-size: 36px;
+         }
+
+         #subheading {
+            width: 65%;
+            font-size: 14px;
+         }
+      }
+
+      #button {
+         padding: 10px 24px;
+      }
+   }
+
+   #rightContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         width: 100%;
+         height: auto;
+         background-size: contain;
+
+         &:hover {
+            scale: 105%;
+         }
+      }
+
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   nav {
+      width: 90%;
+
+      #contact {
+         padding: 10px 24px;
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+
+   main {
+      width: 90%;
+      height: 75%;
+      justify-content: space-between;
+      overflow: hidden;
+   }
+
+   #leftContainer {
+      width: 50%;
+      height: 100%;
+      gap: 64px;
+
+      #textContainer {
+         width: 100%;
+         gap: 24px;
+
+         #upperText {
+            width: 100%;
+            font-size: 16px;
+         }
+
+         #heading {
+            width: 60%;
+            font-size: 40px;
+            line-height: 58px;
+         }
+
+         #subheading {
+            width: 60%;
+            font-size: 16px;
+         }
+      }
+
+      #button {
+         padding: 10px 24px;
+      }
+   }
+
+   #rightContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         width: 100%;
+         height: auto;
+         background-size: contain;
+
+         &:hover {
+            scale: 105%;
+         }
+      }
+
+   }
+}
+
+@media (min-width: 1601px) {
+   nav {
+      width: 90%;
+
+      #contact {
+         padding: 10px 24px;
+      }
+
+      #menu {
+         display: none;
+      }
+   }
+
+   main {
+      width: 90%;
+      height: 75%;
+      justify-content: space-between;
+      overflow: hidden;
+   }
+
+   #leftContainer {
+      width: 50%;
+      height: 100%;
+      gap: 64px;
+
+      #textContainer {
+         width: 100%;
+         gap: 24px;
+
+         #upperText {
+            width: 100%;
+            font-size: 16px;
+         }
+
+         #heading {
+            width: 60%;
+            font-size: 48px;
+            line-height: 68px;
+         }
+
+         #subheading {
+            width: 52%;
+            font-size: 18px;
+            line-height: 140%;
+            /* 25.2px */
+            letter-spacing: 0.2px;
+         }
+      }
+
+      #button {
+         padding: 10px 24px;
+      }
+   }
+
+   #rightContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         width: 90%;
+         height: auto;
+         background-size: contain;
+
+         &:hover {
+            scale: 105%;
+         }
+      }
+
+   }
+}
