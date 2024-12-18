@@ -41,6 +41,11 @@ nav {
    justify-content: space-between;
    align-items: center;
 
+   #logo {
+      transform: translateY(100%);
+      opacity: 0;
+   }
+
    #links {
       display: flex;
       justify-content: center;
@@ -48,6 +53,8 @@ nav {
       gap: 24px;
       font-size: 16px;
       font-weight: 500;
+      transform: translateY(100%);
+      opacity: 0;
 
       a {
          color: #616161;
@@ -75,6 +82,8 @@ nav {
       gap: 10px;
       border: 1.5px solid var(--primary-color);
       text-decoration: none;
+      transform: translateY(100%);
+      opacity: 0;
 
       &:hover {
          color: var(--white-color);
@@ -84,6 +93,8 @@ nav {
 
    #menu {
       display: none;
+      transform: translateY(100%);
+      opacity: 0;
    }
 }
 
@@ -124,6 +135,8 @@ main {
          color: #616161;
          font-size: 16px;
          font-weight: 500;
+         transform: translateY(100%);
+         opacity: 0;
       }
 
       #heading {
@@ -132,6 +145,8 @@ main {
          font-size: 48px;
          font-weight: 700;
          line-height: 120%;
+         transform: translateY(100%);
+         opacity: 0;
       }
 
       #subheading {
@@ -141,6 +156,8 @@ main {
          font-weight: 500;
          line-height: 140%;
          letter-spacing: 0.2px;
+         transform: translateY(100%);
+         opacity: 0;
       }
    }
 
@@ -159,6 +176,8 @@ main {
       border: 1.5px solid var(--primary-color);
       color: var(--white-color);
       background-color: var(--primary-color);
+      transform: translateY(100%);
+      opacity: 0;
 
       &:hover {
          cursor: pointer;
@@ -176,10 +195,14 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   overflow: hidden;
+
 
    img {
       scale: 100%;
       background-size: contain;
+      transform: translateY(50%);
+      opacity: 0;
 
       &:hover {
          scale: 105%;
