@@ -116,6 +116,7 @@ main {
    align-items: start;
    justify-content: center;
    gap: 64px;
+   background-color: var(--white-color);
 
    #textContainer {
       width: 100%;
@@ -196,6 +197,7 @@ main {
    align-items: center;
    justify-content: center;
    overflow: hidden;
+   background-color: var(--white-color);
 
 
    img {
@@ -441,8 +443,8 @@ main {
       height: 45%;
 
       img {
-         width: 80%;
-         height: auto;
+         width: auto;
+         height: 100%;
          background-size: contain;
 
          &:hover {
